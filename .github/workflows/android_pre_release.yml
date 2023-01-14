@@ -74,13 +74,13 @@ jobs:
         with:
             files: ${{steps.sign_app.outputs.signedReleaseFile}}
 
-      ## Upload signed APK to internal Google Play
-      - name: Upload signed APK to Google Play
-        uses: r0adkll/upload-google-play@v1
-        if: ${{!endsWith(github.ref, '-0') }}
-        with:
-          serviceAccountJsonPlainText: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT }}
-          packageName: ${{ secrets.GOOGLE_PLAY_PACKAGE_NAME }}
-          releaseFiles: ${{steps.sign_app.outputs.signedReleaseFile}}
-          track: internal
-          userFraction: 1.0 # 100% of users will get the update
+      # ## Upload signed APK to internal Google Play
+      # - name: Upload signed APK to Google Play
+      #   uses: r0adkll/upload-google-play@v1
+      #   if: ${{!endsWith(github.ref, '-0') }}
+      #   with:
+      #     serviceAccountJsonPlainText: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT }}
+      #     packageName: ${{ secrets.GOOGLE_PLAY_PACKAGE_NAME }}
+      #     releaseFiles: ${{steps.sign_app.outputs.signedReleaseFile}}
+      #     track: internal
+      #     userFraction: 1.0 # 100% of users will get the update
