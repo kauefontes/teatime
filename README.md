@@ -1,6 +1,6 @@
 # Welcome to your new ignited app!
 
-![Pre Release Status](https://github.com/kauefontes/teatime/actions/workflows/android_pre_release.yml/badge.svg)
+<!-- ![Pre Release Status](https://github.com/kauefontes/teatime/actions/workflows/android_pre_release.yml/badge.svg) -->
 
 ![Release Status](https://github.com/kauefontes/teatime/actions/workflows/android_release.yml/badge.svg)
 
