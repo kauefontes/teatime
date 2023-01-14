@@ -5,7 +5,7 @@
     "name": "teatime",
     "slug": "teatime",
     "scheme": "teatime",
-    "version": "1.1.1",
+    "version": "1.1.2-0",
     "orientation": "portrait",
     "icon": "./assets/images/app-icon-all.png",
     "splash": {
@@ -32,7 +32,7 @@
         "resizeMode": "contain",
         "backgroundColor": "#191015"
       },
-      "versionCode": 5
+      "versionCode": 6
     },
     "ios": {
       "icon": "./assets/images/app-icon-ios.png",
@@ -44,7 +44,7 @@
         "resizeMode": "contain",
         "backgroundColor": "#191015"
       },
-      "buildNumber": "5"
+      "buildNumber": "6"
     },
     "web": {
       "favicon": "./assets/images/app-icon-web-favicon.png",
