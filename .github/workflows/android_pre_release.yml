@@ -1,4 +1,4 @@
-name: Android Release ## name of the workflow
+name: Android Pre Release ## name of the workflow
 
 on:
   workflow_dispatch: # To trigger manual build
