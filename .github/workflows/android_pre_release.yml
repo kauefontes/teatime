@@ -76,7 +76,7 @@ jobs:
 
       ## Upload signed APK to internal Google Play
       - name: Upload signed APK to Google Play
-        uses: r0adkll/upload-google-play@v2
+        uses: r0adkll/upload-google-play@v1
         if: ${{!endsWith(github.ref, '-0') }}
         with:
           serviceAccountJsonPlainText: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT }}
