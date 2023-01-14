@@ -68,7 +68,7 @@ jobs:
           keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
 
       ## upload generated apk to github release
-      - name: upload binaries to release
+      - name: Upload signed APK to GitHub Release
         uses: softprops/action-gh-release@v1
         if: ${{startsWith(github.ref, 'refs/tags/') }}
         with:
