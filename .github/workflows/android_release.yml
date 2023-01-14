@@ -3,7 +3,7 @@ name: Android Release ## name of the workflow
 on:
   workflow_dispatch: # To trigger manual build
   release:
-    types: [published] # only run the workflow when a new release has been published
+    types: [released] # only run the workflow when a new release has been published
 
 jobs:
   android-build:
@@ -76,7 +76,7 @@ jobs:
 
       ## Upload signed APK to Google Play
       - name: Upload signed APK to Google Play
-        uses: r0adkll/upload-google-play@v2
+        uses: r0adkll/upload-google-play@v1
         with:
           serviceAccountJsonPlainText: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT }}
           packageName: ${{ secrets.GOOGLE_PLAY_PACKAGE_NAME }}
