@@ -32,7 +32,7 @@
         "resizeMode": "contain",
         "backgroundColor": "#191015"
       },
-      "versionCode": 13
+      "versionCode": 14
     },
     "ios": {
       "icon": "./assets/images/app-icon-ios.png",
@@ -44,7 +44,7 @@
         "resizeMode": "contain",
         "backgroundColor": "#191015"
       },
-      "buildNumber": "13"
+      "buildNumber": "14"
     },
     "web": {
       "favicon": "./assets/images/app-icon-web-favicon.png",
